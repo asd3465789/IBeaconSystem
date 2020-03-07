@@ -1,7 +1,7 @@
 <?php
 $servername = "localhost";
 $username = "root";
-$password = "12345678";
+$password = "zxcrgy4568765432619";
 $dbname="test";
 
 //跟unity那方連結的參數

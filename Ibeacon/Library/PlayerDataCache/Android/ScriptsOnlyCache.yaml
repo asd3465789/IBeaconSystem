@@ -1,11 +1,13 @@
 ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
+    - App
     - Database
     - OMobile.EstimoteUnity.Demo.Ibeacon
     - OMobile.EstimoteUnity.EstimoteUnity
     - ProjectManager
     - Timer
+    - UIManager
     Unity.2D.Tilemap.Editor.dll:
     - UnityEditor.Tilemaps.GridPaintingState
     - UnityEditor.Tilemaps.GridPaletteBrushes
@@ -35,6 +37,57 @@ ScriptsOnlyBuild:
     com.unity.multiplayer-hlapi.Runtime.dll:
     - UnityEngine.Networking.NetworkCallbacks
   sceneClasses:
+    Assets/Scenes/PugTest.unity:
+    - Class: 1
+      Script: {instanceID: 0}
+    - Class: 4
+      Script: {instanceID: 0}
+    - Class: 20
+      Script: {instanceID: 0}
+    - Class: 21
+      Script: {instanceID: 0}
+    - Class: 28
+      Script: {instanceID: 0}
+    - Class: 48
+      Script: {instanceID: 0}
+    - Class: 81
+      Script: {instanceID: 0}
+    - Class: 104
+      Script: {instanceID: 0}
+    - Class: 108
+      Script: {instanceID: 0}
+    - Class: 114
+      Script: {instanceID: 11200}
+    - Class: 114
+      Script: {instanceID: 11414}
+    - Class: 114
+      Script: {instanceID: 11464}
+    - Class: 114
+      Script: {instanceID: 11512}
+    - Class: 114
+      Script: {instanceID: 11982}
+    - Class: 114
+      Script: {instanceID: 12260}
+    - Class: 114
+      Script: {instanceID: 13110}
+    - Class: 114
+      Script: {instanceID: 13296}
+    - Class: 114
+      Script: {instanceID: 13584}
+    - Class: 115
+      Script: {instanceID: 0}
+    - Class: 128
+      Script: {instanceID: 0}
+    - Class: 157
+      Script: {instanceID: 0}
+    - Class: 196
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
+      Script: {instanceID: 0}
     Assets/Scenes/ibeacon.unity:
     - Class: 1
       Script: {instanceID: 0}
@@ -57,27 +110,27 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 11200}
     - Class: 114
-      Script: {instanceID: 11410}
+      Script: {instanceID: 11414}
     - Class: 114
-      Script: {instanceID: 11458}
+      Script: {instanceID: 11462}
     - Class: 114
-      Script: {instanceID: 11460}
+      Script: {instanceID: 11464}
     - Class: 114
-      Script: {instanceID: 11508}
+      Script: {instanceID: 11512}
     - Class: 114
-      Script: {instanceID: 11978}
+      Script: {instanceID: 11982}
     - Class: 114
-      Script: {instanceID: 12076}
+      Script: {instanceID: 12080}
     - Class: 114
-      Script: {instanceID: 12506}
+      Script: {instanceID: 12514}
     - Class: 114
-      Script: {instanceID: 12608}
+      Script: {instanceID: 12616}
     - Class: 114
-      Script: {instanceID: 13100}
+      Script: {instanceID: 13110}
     - Class: 114
-      Script: {instanceID: 13108}
+      Script: {instanceID: 13118}
     - Class: 114
-      Script: {instanceID: 13570}
+      Script: {instanceID: 13584}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -385,6 +438,12 @@ ScriptsOnlyBuild:
     className: ScrollRect
   - hash:
       serializedVersion: 2
+      Hash: 3eabed6cff55a0fa8ec8a76ea96a018e
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: UIManager
+  - hash:
+      serializedVersion: 2
       Hash: c3d3430df9e3ea95e3e3d587961390fb
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
@@ -455,6 +514,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: VerticalLayoutGroup
+  - hash:
+      serializedVersion: 2
+      Hash: e29817d8cd9ffe9639fe1f75e8a5043c
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: AppManager
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -577,6 +642,12 @@ ScriptsOnlyBuild:
     className: MarkerTrack
   - hash:
       serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: App
+  - hash:
+      serializedVersion: 2
       Hash: d791aa6007fa3640be1164ea75bb087d
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
@@ -697,5 +768,6 @@ ScriptsOnlyBuild:
     className: PlayableTrack
   platform: 13
   scenePathNames:
+  - Assets/Scenes/PugTest.unity
   - Assets/Scenes/ibeacon.unity
-  playerPath: C:/Users/user/Desktop/test/test.apk
+  playerPath: "C:/Users/asd34/OneDrive/\u684C\u9762/IbeaconTest/test.apk"

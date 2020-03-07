@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/PugTest.unity
+    guid: 3f43d265720896d4eadf6502c6af88c6
+  - enabled: 1
     path: Assets/Scenes/ibeacon.unity
     guid: d2416ab16055fe84db0a783a85a6041e
   m_configObjects: {}

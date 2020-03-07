@@ -2,12 +2,39 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BeaconManager : MonoBehaviour
+public class HandleManager 
 {
-    public List<IBeaconHandle> beaconHandles;
-    private void Update()
+    public List<IHandle> Handles;
+    public IHandle CurrentHandle;
+
+    public void Init()
     {
-         
+        Handles = new List<IHandle>();
+        Handles.Add(new TestHandle());
+        Handles.Add(new Test2Handle());
+        CurrentHandle = new NoneHandle();
+    }
+
+    public void HandleUpdate()
+    {
+        foreach (IHandle value in Handles)
+        {
+            if (value.Trigger() && value != CurrentHandle)
+            {
+                SwitchHandle(value);
+                break;
+            }
+        }
+        AppManager.Instance._UIManager.testText.text = CurrentHandle.name;
+        CurrentHandle.Update();
+    }
+
+
+    public void SwitchHandle(IHandle Nexthadle)
+    {
+        CurrentHandle.Exit();
+        CurrentHandle = Nexthadle;
+        Nexthadle.Enter();
     }
 
 }

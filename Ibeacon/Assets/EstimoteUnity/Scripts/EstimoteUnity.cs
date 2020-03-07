@@ -171,6 +171,7 @@ namespace OMobile.EstimoteUnity
 					filteredBeaconRegions.Add (beaconRegion);
 				}
 			}
+
 #if !UNITY_EDITOR
 #if UNITY_IOS
 			InitializeIOS (filteredBeaconRegions);
@@ -181,7 +182,7 @@ namespace OMobile.EstimoteUnity
 #endif
 #endif
 
-			mHasInitialized = true;
+            mHasInitialized = true;
 		}
 
 		/// <summary>

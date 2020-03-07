@@ -76,7 +76,7 @@ namespace OMobile.EstimoteUnity.Demo
         {
             projectManager = FindObjectOfType<ProjectManager>();
             timer = FindObjectOfType<Timer>();
-            
+            _EstimoteUnity = FindObjectOfType<EstimoteUnity>();
             _EstimoteUnity.OnDidRangeBeacons.AddListener(HandleDidRangeBeacons);
             _EstimoteUnity.OnFetchedBeaconCloudDetailsSuccess.AddListener(HandleFetchedBeaconCloudDetailsSuccess);
             _EstimoteUnity.OnFetchedBeaconCloudDetailsError.AddListener(HandleFetchedBeaconCloudDetailsError);

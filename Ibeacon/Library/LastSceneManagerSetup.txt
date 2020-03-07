@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/Scenes/ibeacon.unity
+- path: Assets/Scenes/PugTest.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0

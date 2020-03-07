@@ -2105,8 +2105,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 08d2f75c741914d44a4f6920c0175508, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  getUserID_Path: http://192.168.43.70/GetIdData.php
-  updateData_Path: http://192.168.43.70/UpdateData.php
+  getUserID_Path: http://127.0.0.1/GetIdData.php
+  updateData_Path: http://127.0.0.1/UpdateData.php
   userID_Text: {fileID: 1004346069}
   updateFinish: 0
   status_Text: {fileID: 1462690949}
