@@ -75,9 +75,10 @@
     <Compile Include="Assets\Scripts\Demo\Ibeacon.cs" />
     <Compile Include="Assets\Scripts\Demo\ProjectManager.cs" />
     <Compile Include="Assets\Scripts\Demo\Timer.cs" />
-    <Compile Include="Assets\Scripts\IBeacon\BeaconHandle\IBeaconHandle.cs" />
+    <Compile Include="Assets\Scripts\IBeacon\BeaconHandle\IHandle.cs" />
     <Compile Include="Assets\Scripts\IBeacon\BeaconHandle\NoneHandle.cs" />
-    <Compile Include="Assets\Scripts\IBeacon\BeaconManager.cs" />
+    <Compile Include="Assets\Scripts\IBeacon\HandleManager.cs" />
+    <Compile Include="Assets\Scripts\IBeacon\HandlePriorityEnum.cs" />
     <Compile Include="Assets\Scripts\Pugtools\Singleton.cs" />
     <Compile Include="Assets\Scripts\System\App.cs" />
     <Compile Include="Assets\Scripts\System\AppManager.cs" />

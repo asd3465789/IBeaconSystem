@@ -28,45 +28,38 @@ public class AppManager : Singleton<AppManager>
 
     public void AppManagerUpdate()
     {
-        if (mBeacons.Count > 0)
-            beaconManager.HandleUpdate();
-
-
+        beaconManager.HandleUpdate();
     }
 
     private void HandleDidRangeBeacons(List<EstimoteUnityBeacon> beacons)
     {
+        App.frameCount++;
+        /*
         // Cache the beacons
         foreach (EstimoteUnityBeacon beacon in beacons)
         {
             int beaconIndex = mBeacons.IndexOf(beacon);
+            //-1代表不再已掃描清單中
             if (beaconIndex == -1)
             {
+                //不再清單中就加入清單
                 mBeacons.Add(beacon);
             }
             else
             {
+                //在清單中則取代原資料
                 mBeacons[beaconIndex] = beacon;
             }
         }
-
+        */
+        mBeacons = beacons;
        ///排序Beacons
         mBeacons.Sort((EstimoteUnityBeacon x, EstimoteUnityBeacon y) => x.Accuracy.CompareTo(y.Accuracy));
-
+        Caching.ClearCache();
     }
     private void HandleFetchedBeaconCloudDetailsSuccess(EstimoteUnityBeaconCloudInfo beaconInfo)
     {
         Debug.Log(beaconInfo.ToString());
-
-        //_BeaconInfoPanelName.text = beaconInfo.BeaconName;
-        //_BeaconInfoPanelUUID.text = "UUID: " + beaconInfo.UUID;
-        //_BeaconInfoPanelMajorMinor.text = "Major / Minor: " + beaconInfo.Major + ":" + beaconInfo.Minor;
-        //_BeaconInfoPanelBeaconColor.text = "Beacon Color: " + beaconInfo.Color;
-        //_BeaconInfoPanelBatteryLife.text = "Battery Life (Days): " + beaconInfo.BatteryLifeDays.ToString();
-
-        //_BeaconInfoPanel.SetActive(true);
-        //_BeaconInfoPanelStatus.SetActive(false);
-        //_BeaconInfoPanelContent.SetActive(true);
     }
 
     private void HandleFetchedBeaconCloudDetailsError(string errorBody)
