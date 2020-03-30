@@ -10,6 +10,7 @@ namespace OMobile.EstimoteUnity.Demo
     public class Ibeacon : MonoBehaviour
     {
 
+
         #region Public Variables
 
         [Header("Setup")]
